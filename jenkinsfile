@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/saiyedsahilhussain/Project1_Devops.git
-'
+                git branch: 'master', url: 'https://github.com/saiyedsahilhussain/Project1_Devops.git'
             }
         }
 
@@ -27,15 +26,14 @@ pipeline {
                 sh 'npm run build'
             }
         }
+    } // ✅ Closing bracket added here
 
-}
     post {
         success {
-            echo  ' Build and Deployment Successful!'
+            echo '✅ Build and Deployment Successful!'
         }
         failure {
-            echo ' Build or Deployment Failed!'
+            echo '❌ Build or Deployment Failed!'
         }
     }
 }
-
