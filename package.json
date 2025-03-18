@@ -8,8 +8,8 @@
     "serve": "node server.js",
     "dev": "nodemon server.js",
     "production": "NODE_ENV=production node server.js",
-    "build": "echo 'No build step required for this app'",  // Placeholder build script
-    "test": "echo \"No test specified\" && exit 0"  // Placeholder test script, you can modify when you add tests
+    "build": "echo 'No build step required for this app'",  
+    "test": "echo \"No test specified\" && exit 0"  
   },
   "license": "MIT",
   "dependencies": {
