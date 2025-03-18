@@ -8,8 +8,9 @@
     "serve": "node server.js",
     "dev": "nodemon server.js",
     "production": "NODE_ENV=production node server.js",
-    "build": "npx mix --production" ,  
-    "test": "echo \"No test specified\" && exit 0"  
+    "test": "mocha", 
+    "start": "node server.js",
+    "build": "webpack" 
   },
   "license": "MIT",
   "dependencies": {
@@ -35,5 +36,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
+    "mocha": "^10.2.0"
+    "webpack": "^"
   }
 }
