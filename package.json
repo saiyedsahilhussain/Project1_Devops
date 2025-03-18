@@ -10,7 +10,8 @@
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "build": "npm run production"  
+    "build": "mkdir -p dist && cp -r public/* dist/" 
+    "test": "echo \"No test specified\" && exit 0"
   },
   "license": "MIT",
   "dependencies": {
