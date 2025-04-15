@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: '', credentialsId: 'git-cred'
+                git branch: 'main', url: 'https://github.com/saiyedsahilhussain/Project1_Devops.git', credentialsId: 'git-cred'
             }
         }
         stage('Install Dependencies') {
